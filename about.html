@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ashley's Web Design</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9429a48ad4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1><span>Ashley's</span> Web Design</h1>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                    <!--Light/Dark Mode Toggle-->
+                    <a href="javascript:void(0);" class="sun" onclick="setTheme('light')"><i class="fa-solid fa-sun"></i></a>
+                    <a href="javascript:void(0);" class="moon" onclick="setTheme('dark')"><i class="fa-solid fa-moon light"></i></a>
+                    <!--Burger Menu-->
+                    <a href="javascript:void(0);" class="burger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+                </nav>
+            </div>
+        </header>
+        <nav id="mobile-nav" class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <section class="about flex">
+                <div>
+                    <h2><span>Hello</span></h2>
+                    <h3>I'm Ashley Miller</h3>
+                    <h4>Ash | Ashley Marie | Milly</h4>
+                    <p>
+                        Besides web design and development, I love to write, read, play video games, do arts and crafts, imagine I got my letter to Hogwarts, geek out over new fabric I found, learn new things, and be at home with my family - my husband, our two boys, our cat, and our dog.
+                    </p>
+                    <ul class="about-list">
+                        <li><span>📖 Currently Reading:</span> Harry Potter and the Order of the Phoenix</li>
+                        <li><span>🎮 Currently Playing:</span> Hogwarts Legacy</li>
+                        <li><span>🎨 Currently Creating:</span> Beginner Sewing Projects</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/ashley.png" alt="Ashley">
+                </div>
+            </section>
+            <section id="some-things-about-me">
+                <div class="some-things-about-me">
+                    <h2>Some Things About Me</h2>
+                    <div class="flex">
+                        <div>
+                            <ul class="about-list some-things-about-me-list">
+                                <li>🌸 In case it isn't obvious, my favorite color is pink.</li>
+                                <li>🏰 One of my dreams is to visit all of the Disney parks. So far I've been to the one in Florida and the one in Japan.</li>
+                                <li>🏡 I'm originally from Florida, but I now live in North Carolina with my family.</li>
+                                <li>🦡 I'm a Hufflepuff.</li>
+                                <li>🎼 I want to see Lights in concert.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="about-list some-things-about-me-list">
+                                <li>☕️ I have to have my cup of coffee every morning.</li>
+                                <li>🎯 I spend way too much money at Target.</li>
+                                <li>🍽 I love to cook, and my current favorite recipe is Sheet Pan Mac and Cheese.</li>
+                                <li>🍋 I'm a sucker for lemon flavored sweets.</li>
+                                <li>💻 I love playing in Adobe Photoshop and Illustrator. I'll share my creations in my portfolio.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <p>
+                    Designed & Developed with <i class="fa-solid fa-heart"></i> by Ashley Miller
+                </p>
+            </footer>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>

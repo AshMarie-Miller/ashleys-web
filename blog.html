@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ashley's Web Design</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9429a48ad4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1><span>Ashley's</span> Web Design</h1>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                    <!--Light/Dark Mode Toggle-->
+                    <a href="javascript:void(0);" class="sun" onclick="setTheme('light')"><i class="fa-solid fa-sun"></i></a>
+                    <a href="javascript:void(0);" class="moon" onclick="setTheme('dark')"><i class="fa-solid fa-moon light"></i></a>
+                    <!--Burger Menu-->
+                    <a href="javascript:void(0);" class="burger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
+                </nav>
+            </div>
+        </header>
+        <nav id="mobile-nav" class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <main>
+            <section class="blog">
+                <h2>Blog</h2>
+                <section id="cli-and-git">
+                    <h3>CLI and Git: A Basic Reference</h3>
+                    <h4>March 5th, 2023</h4>
+                    <div class="flex">
+                        <div>
+                            <img src="images/cli-and-git.jpg" alt="Pink desk with notebook, pen, keyboard, headphones, and mouse" class="blog-image" />
+                        </div>
+                        <div>
+                            <p>
+                                Whether you're a new developer, new to CLI and/or Git, or like me, you sometimes need a reminder of how to do something, this CLI and Git basic reference is for you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="note">
+                        <h5>What is CLI?</h5>
+                        <p>
+                            CLI stands for command-line interface, and it's a text-based UI (user interface) used to interact with your computer.
+                        </p>
+                    </div>
+                    <h5>Basic CLI Reference</h5>
+                    <ul class="blog-list">
+                        <li><span>pwd:</span>print working directory</li>
+                        <li><span>ls:</span>list directories</li>
+                        <li><span>cd:</span>change directory</li>
+                        <li><span>mkdir:</span>make directory</li>
+                        <li><span>touch:</span>create file</li>
+                        <li><span>rm:</span>delete file</li>
+                        <li><span>rm -r:</span>delete directory along with subdirectories and files</li>
+                        <li><span>mv:</span>move or rename files or directories</li>
+                        <li><span>cp:</span>copy files or directories</li>
+                        <li><span>clear:</span>clear your cli</li>
+                        <li><span>man:</span>manual pages</li>
+                    </ul>
+                    <details>
+                        <summary>Read More</summary>
+                        <div class="note">
+                            <h5>What is Git?</h5>
+                            <p>
+                                Git is a version control system used to track changes in files.
+                            </p>
+                        </div>
+                        <h5>Basic Git Reference</h5>
+                        <ul class="blog-list">
+                            <li><span>git config:</span>configure Git</li>
+                            <li>git config --global user.name "First Last"</li>
+                            <li>git config --global user.email username@email.com</li>
+                            <li><span>git init:</span>initialize Git repository</li>
+                            <li><span>git status:</span>check the status of a Git repository</li>
+                            <li><span>git add:</span>add changes in the working directory to the staging area</li>
+                            <li><span>git commit:</span>track files</li>
+                            <li>git commit -m "Commit Message"</li>
+                            <li><span>git push:</span>upload files</li>
+                            <li><span>git pull:</span>download files</li>
+                            <li><span>git clone:</span>optain a repository from an existing URL</li>
+                            <li><span>git diff:</span>show the file differences which are not yet staged</li>
+                            <li><span>git reset:</span>unstages the file, but preserves the file contents</li>
+                            <li><span>git rm:</span>deletes the file from your working directory and stages the deletion</li>
+                            <li><span>git log:</span>lists the version history for the current branch</li>
+                            <li><span>git show:</span>shows the metadata and content changes of the specified commit</li>
+                            <li><span>git tag:</span>gives tags to the specified commit</li>
+                            <li><span>git branch:</span>lists all the local branches</li>
+                            <li><span>git checkout:</span>switches from one branch to another</li>
+                            <li><span>git merge:</span>merges the specified branch's history into the current branch</li>
+                        </ul>
+                    </details>
+                </section>
+            </section>
+            <footer>
+                <p>
+                    Designed & Developed with <i class="fa-solid fa-heart"></i> by Ashley Miller
+                </p>
+            </footer>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>
