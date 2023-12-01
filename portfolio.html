@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ashley's Web Design</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9429a48ad4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1><span><a href="index.html" class="logo">Ashley's</span> Web Design</a></h1>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <!--Light/Dark Mode Toggle-->
+                    <a href="javascript:void(0);" class="sun" onclick="setTheme('light')"><i class="fa-solid fa-sun"></i></a>
+                    <a href="javascript:void(0);" class="moon" onclick="setTheme('dark')"><i class="fa-solid fa-moon light"></i></a>
+                    <!--Burger Menu-->
+                    <a href="javascript:void(0);" class="burger" onclick="openMenu()"><i class="fa-solid fa-bars"></i></a>
+                </nav>
+            </div>
+        </header>
+        <nav id="mobile-nav" class="mobile-nav">
+            <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+        <main>
+            <section class="portfolio">
+                    <h2>Portfolio</h2>
+                    <p>
+                        Coming Soon
+                    </p>
+            </section>
+            <footer>
+                <p>
+                    Designed & Developed with <i class="fa-solid fa-heart"></i> by Ashley Miller
+                </p>
+            </footer>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+</html>

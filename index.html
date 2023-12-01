@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ashley's Web Design</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9429a48ad4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1><span><a href="index.html" class="logo">Ashley's</span> Web Design</a></h1>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <!--Light/Dark Mode Toggle-->
+                    <a href="javascript:void(0);" class="sun" onclick="setTheme('light')"><i class="fa-solid fa-sun"></i></a>
+                    <a href="javascript:void(0);" class="moon" onclick="setTheme('dark')"><i class="fa-solid fa-moon light"></i></a>
+                    <!--Burger Menu-->
+                    <a href="javascript:void(0);" class="burger" onclick="openMenu()"><i class="fa-solid fa-bars"></i></a>
+                </nav>
+            </div>
+        </header>
+        <nav id="mobile-nav" class="mobile-nav">
+            <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+            <div class="mobile-nav-content">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+            </div>
+        </nav>
+        <main>
+            <section class="hello flex">
+                <div>
+                    <h2><span>Hello</span></h2>
+                    <h3>I'm Ashley Miller</h3>
+                    <h4>Web Designer & Front End Developer 👩‍💻 | Boy Mom 👨‍👩‍👦‍👦</h4>
+                    <p>
+                        Welcome to my cozy corner of the web where I share my love of design and code. I'm currently earning my Responsive Web Design Certification from freeCodeCamp. You can peek at my projects in my <a href="portfolio.html">portfolio</a>. I'm also doing the 100 Days of Code Challenge. You can follow my journey on <a href="https://twitter.com/ashmarie_miller">X</a>.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/ashley.png" alt="Ashley" class="polaroid">
+                </div>
+            </section>
+            <section class="portfolio">
+                <h2>Featured Project</h2>
+                <div class="flex">
+                    <h3>Coming Soon</h3>
+                </div>
+            </section>
+            <section class="blog">
+                <h2>Featured Post</h2>
+                <div class="flex">
+                    <h3>Coming Soon</h3>
+                </div>
+            </section>
+            <section id="about">
+                <div class="about flex">
+                    <h2>About Me</h2>
+                    <p>
+                        I first fell in love with design and code in high school when I took Web Design and Digital Design classes. This love is why I chose Web Design and Development as my major in college and why I'm currently earning my Responsive Web Design Certification from freeCodeCamp.
+                    </p>
+                    <p>
+                        <a href="https://github.com/AshMarie-Miller"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://twitter.com/ashmarie_miller"><i class="fa-brands fa-x-twitter"></i></a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Designed & Developed with <i class="fa-solid fa-heart"></i> by Ashley Miller
+            </p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
