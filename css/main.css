@@ -7,25 +7,29 @@
 :root, :root.light {
     --primary-color:#000;
     --secondary-color:#00000080;
+    --tertiary-color:#00000080;
     --primary-bg-color:#f4c2c240;
-    --secondary-bg-color:#fff;
+    --secondary-bg-color:#faf0e6;
+    --tertiary-bg-color:#fffafa;
     --border-color:#f4c2c2;
     --secondary-border-color:#ffe4e1;
     --box-shadow-color:#ccc;
     --button-border-color:#00000080;
-    --button-background-color:#bc8f8f;
+    --button-background-color:#f4c2c2;
 }
 
 :root.dark {
-    --primary-color:#fff;
+    --primary-color:#fffafa;
     --secondary-color:#f4c2c2;
+    --tertiary-color:#fffafa;
     --primary-bg-color:#444;
-    --secondary-bg-color:#555;
+    --secondary-bg-color:#bc8f8f;
+    --tertiary-bg-color:#555;
     --border-color:#f4c2c2;
     --secondary-border-color:#ffe4e1;
     --box-shadow-color:#444;
-    --button-border-color:#bc8f8f;
-    --button-background-color:#bc8f8f;
+    --button-border-color:#f4c2c2;
+    --button-background-color:#f4c2c2;
 }
 
 * {
@@ -34,7 +38,7 @@
 }
 
 body {
-    background-color:var(--secondary-bg-color);
+    background-color:var(--tertiary-bg-color);
 }
 
 header {
@@ -76,16 +80,34 @@ header {
     margin-top:30px;
   }
 
-.hello, .portfolio, .blog, .about, .some-things-about-me {
+.hello, .portfolio-div, .blog, .about, .some-things-about-me {
     max-width:1000px;
     margin:0px auto;
 }
 
 .portfolio {
+    background-color:var(--secondary-bg-color);
+    padding:70px 0px 90px 0px;
+    --mask:
+        radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 51% repeat-x,
+        radial-gradient(111.80px at 50% -100px,#0000 99%,#000 101%) 50% 50px/200px calc(51% - 50px) repeat-x,
+        radial-gradient(111.80px at 50% calc(100% - 150.00px),#000 99%,#0000 101%) calc(50% - 100px) 100%/200px 51% repeat-x,
+        radial-gradient(111.80px at 50% calc(100% + 100.00px),#0000 99%,#000 101%) 50% calc(100% - 50px)/200px calc(51% - 50px) repeat-x;
+    -webkit-mask:var(--mask);
+    mask:var(--mask);
+    margin-bottom:-70px;
+}
+
+.portfolio-div {
     overflow:hidden;
 }
 
-#about, #some-things-about-me {
+#about {
+    background-color:var(--primary-bg-color);
+    padding-top:50px;
+}
+
+#some-things-about-me {
     background-color:var(--primary-bg-color);
     margin-top:20px;
 }
@@ -155,6 +177,10 @@ h2 span {
     margin-bottom:-20px;
 }
 
+.portfolio h2 {
+    color:var(--tertiary-color);
+}
+
 h3 {
     font-family:"Source Sans Pro", sans-serif;
     font-weight:300;
@@ -212,7 +238,7 @@ footer p {
     margin:20px 0px;
     padding:20px;
     box-sizing:border-box;
-    background-color:var(--secondary-bg-color);
+    background-color:var(--tertiary-bg-color);
     position:relative;
 }
 
@@ -305,6 +331,7 @@ section a:hover {
     text-align:center;
     margin:10px auto;
     padding:5px 0;
+    background-color:var(--tertiary-bg-color);
     border:1px solid var(--button-border-color);
     box-shadow:5px 5px 0px var(--button-background-color);
     cursor:pointer;
