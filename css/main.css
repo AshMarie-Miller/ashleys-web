@@ -106,10 +106,6 @@ header {
     margin-bottom:-70px;
 }
 
-.portfolio-div {
-    overflow:hidden;
-}
-
 .blog {
     padding:50px 0px 70px 0px;
 }
@@ -135,15 +131,6 @@ header {
     width:50%;
     padding:10px;
     box-sizing:border-box;
-}
-
-.featured-project {
-    width:50%;
-    box-sizing:border-box;
-}
-
-.featured-project:first-of-type {
-    padding-left:15px;
 }
 
 .blog-card {
@@ -428,30 +415,20 @@ img {
     padding-top:25px;
 }
 
-.featured-project-images {
-    position:relative; 
-    top:50px; 
-    height:400px;
-}
-
 .left-featured-project-image {
     max-width:250px;
     transform:rotate(-5deg);
     border:10px solid var(--border-color);
-    position:absolute;
-    top:0px;
-    left:0px;
     box-shadow:5px 5px 5px var(--box-shadow-color);
+    margin:25px auto;
 }
 
 .right-featured-project-image {
     max-width:250px; 
     transform:rotate(5deg);
     border:10px solid var(--secondary-border-color);
-    position:absolute;
-    top:50px;
-    left:150px;
     box-shadow:5px 5px 5px var(--box-shadow-color);
+    margin:25px auto;
 }
 
 /* Small Screens */

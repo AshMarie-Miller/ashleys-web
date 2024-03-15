@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9429a48ad4.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     </head>
     <body>
         <header>
@@ -55,12 +57,9 @@
             <section class="portfolio">
                 <div class="portfolio-div">
                     <h2 class="portfolio-h2">Featured Projects</h2>
-                    <div class="flex">
+                    <div class="carousel">
                         <div class="featured-project">
-                            <div class="featured-project-images">
-                                <img src="images/survey-form.png" alt="Survey Form" class="left-featured-project-image">
-                                <img src="images/survey-form-2.png" alt="Survey Form" class="right-featured-project-image">
-                            </div>
+                            <img src="images/survey-form.png" alt="Survey Form" class="left-featured-project-image">
                             <h3>Survey Form</h3>
                             <h4>for freeCodeCamp's Responsive Web Design Certification</h4>
                             <p>
@@ -69,16 +68,22 @@
                             <a class="button" href="/survey-form">Visit</a>
                         </div>
                         <div class="featured-project">
-                            <div class="featured-project-images">
-                                <img src="images/tribute-page.png" alt="Tribute Page" class="left-featured-project-image">
-                                <img src="images/tribute-page-2.png" alt="Tribute Page" class="right-featured-project-image">
-                            </div>
+                            <img src="images/tribute-page.png" alt="Tribute Page" class="right-featured-project-image">
                             <h3>Tribute Page</h3>
                             <h4>for freeCodeCamp's Responsive Web Design Certification</h4>
                             <p>
                                 Developed with HTML, and CSS, it features a bulleted list with a custom bullet.
                             </p>
                             <a class="button" href="/tribute-page">Visit</a>
+                        </div>
+                        <div class="featured-project">
+                            <img src="images/tech-doc-page.png" alt="Technical Documentation Page" class="left-featured-project-image">
+                            <h3>Technical Documentation Page</h3>
+                            <h4>for freeCodeCamp's Responsive Web Design Certification</h4>
+                            <p>
+                                Developed with HTML, and CSS, it features a basic reference to GIT and a hover effect on the navigation links.
+                            </p>
+                            <a class="button" href="/tech-doc-page">Visit</a>
                         </div>
                     </div>
                 </div>
@@ -127,5 +132,30 @@
             </p>
         </footer>
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.carousel').slick({
+                dots: true,
+                slidesToShow: 2,
+                responsive: [
+                    {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                    },
+                    {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                    }
+                ]
+              });
+            });
+        </script>
     </body>
 </html>
