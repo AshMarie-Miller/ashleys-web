@@ -1,0 +1,356 @@
+/*---------- Color & Font Variables ----------*/
+
+:root {
+    /*----- Colors -----*/
+    --primary-color:#fae3e3; /* A Tint of Baby Pink */
+    --secondary-color:#faf0e6; /* Linen */
+    --tertiary-color:#000;
+    --neutral-prim:#0a0a0a; /* Jet Black */
+    --neutral-sec:#fffafa; /* Snow */
+    --neutral-tert:#5a5a5a; /* Dark Grey */
+
+    /*----- Fonts -----*/
+    --fantasy:fantasy;
+    --cursive:"Dawning of a New Day", cursive;
+    --sans-serif:"Source Sans 3", sans-serif;
+    --serif:serif;
+    --monospace:monospace;
+    font-size:16px;
+}
+
+/*---------- Color Classes ----------*/
+
+/*----- Colors -----*/
+.primary-color {
+    color:var(--primary-color);
+}
+.secondary-color {
+    color:var(--secondary-color);
+}
+.tertiary-color {
+    color:var(--tertiary-color);
+}
+.neutral-prim {
+    color:var(--neutral-prim);
+}
+.neutral-sec {
+    color:var(--neutral-sec);
+}
+.neutral-tert {
+    color:var(--neutral-tert);
+}
+
+/*----- Background Colors -----*/
+.bg-primary {
+    background-color:var(--primary-color);
+}
+.bg-secondary {
+    background-color:var(--secondary-color);
+}
+.bg-tertiary {
+    background-color:var(--tertiary-color);
+}
+.bg-neutral-prim {
+    background-color:var(--neutral-prim);
+}
+.bg-neutral-sec {
+    background-color:var(--neutral-sec);
+}
+.bg-neutral-tert {
+    background-color:var(--neutral-tert);
+}
+
+/*---------- Font Classes ----------*/
+
+/*----- Font Families -----*/
+.fantasy {
+    font-family:var(--fantasy);
+}
+
+.cursive {
+    font-family:var(--cursive);
+}
+
+.sans-serif {
+    font-family:var(--sans-serif);
+}
+
+.serif {
+    font-family:var(--serif);
+}
+
+.monospace {
+    font-family:var(--monospace);
+}
+
+/*----- Text Transforms -----*/
+.uppercase {
+    text-transform:uppercase;
+}
+
+.lowercase {
+    text-transform:lowercase;
+}
+
+/*----- Text Decorations -----*/
+.td-none {
+    text-decoration:none;
+}
+
+/*----- Font Sizes -----*/
+.f1 {
+    font-size:0.5rem;
+}
+
+.f2 {
+    font-size:0.625rem;
+}
+
+.f3 {
+    font-size:0.75rem;
+}
+
+.f4 {
+    font-size:0.875rem;
+}
+
+.f5 {
+    font-size:1rem;
+}
+
+.f6 {
+    font-size:1.25rem;
+}
+
+.f7 {
+    font-size:1.5rem;
+}
+
+.f8 {
+    font-size:1.75rem;
+}
+
+.f9 {
+    font-size:2rem;
+}
+
+.f10 {
+    font-size:2.25rem;
+}
+
+/*----- Font Weights -----*/
+.fw3 {
+    font-weight:300;
+}
+
+.fw4 {
+    font-weight:400;
+}
+
+.fw5 {
+    font-weight:500;
+}
+
+/*----- Letter Spacings -----*/
+.ls1 {
+    letter-spacing:-1px;
+}
+
+.ls2 {
+    letter-spacing:0px;
+}
+
+.ls3 {
+    letter-spacing:1px;
+}
+
+/*----- Text Alignments -----*/
+.text-center {
+    text-align:center;
+}
+
+/*----- List Style Types -----*/
+.list-none {
+    list-style-type:none;
+} 
+
+.list-circle {
+    list-style-type:circle;
+}
+
+.list-disc {
+    list-style-type:disc;
+}
+
+.list-square {
+    list-style-type:square
+}
+
+/*---------- Layout Classes ----------*/
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.content {
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 1rem;
+}
+
+/*----- Displays -----*/
+.block {
+    display:block;
+}
+
+.flex {
+    display:flex;
+}
+
+.none {
+    display:none;
+}
+
+/*----- Flex Wraps -----*/
+.flex-wrap {
+    flex-wrap:wrap;
+}
+
+.flex-no-wrap {
+    flex-wrap:nowrap;
+}
+
+.flex-wrap-reverse {
+    flex-wrap:wrap-reverse;
+}
+
+/*----- Align Items -----*/
+.center {
+    align-items:center;
+}
+
+/*----- Justify Contents -----*/
+.space-around {
+    justify-content:space-around;
+}
+
+.space-between {
+    justify-content:space-between;
+}
+
+.space-evenly {
+    justify-content:space-evenly;
+}
+
+/*---------- Images ----------*/
+
+img {
+    max-width:100%;
+}
+
+/*---------- Ashley's Web.Design ----------*/
+
+.header-nav div {
+    height:100px;
+}
+
+.header-nav h1 {
+    width:75%;
+    margin:0 0 10px 0;
+}
+
+.header-nav h1 span {
+    margin:0 0 -25px 3.5px;
+}
+
+.header-nav nav {
+    width:25%;
+}
+
+.heroine {
+    height:calc(100vh - 100px);
+}
+
+.heroine div div {
+    width:50%;
+}
+
+@media screen and (max-width:500px) {
+    .heroine div div {
+        width:100%;
+    }
+}
+
+.heroine h1 {
+    margin:0 0 -25px 0;
+}
+
+.heroine h3 {
+    margin:0 0 10px 0;
+}
+
+.heroine img {
+    transform:rotate(5deg);
+}
+
+.about {
+    padding:20px 0 10px 0;
+}
+
+.about h2 {
+    margin:0 0 10px 0;
+}
+
+.about-image {
+    max-width:33%;
+}
+
+@media screen and (max-width:500px) {
+    .about-image {
+        max-width:unset;
+        width:100%;
+    }
+}
+
+.about-image img {
+    width:300px;
+}
+
+.about-blurb {
+    max-width:66%;
+}
+
+@media screen and (max-width:500px) {
+    .about-blurb {
+        max-width:unset;
+        width:100%;
+    }
+}
+
+.about-blurb h3 {
+    margin:10px 0;
+}
+
+.about-fun-facts h2 {
+    padding:20px 0 0 0;
+}
+
+.about-fun-facts ul {
+    columns:2;
+}
+
+@media screen and (max-width:500px) {
+    .about-fun-facts ul {
+        columns:1;
+    }
+}
+
+.about-fun-facts ul li {
+    margin:0 0 10px 0;
+    padding:5px 10px;
+}
+
+.footer {
+    padding:0 0 10px 0;
+}
