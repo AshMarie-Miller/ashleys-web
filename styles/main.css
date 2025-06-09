@@ -14,7 +14,7 @@
     --cursive:"Dawning of a New Day", cursive;
     --sans-serif:"Source Sans 3", sans-serif;
     --serif:serif;
-    --monospace:monospace;
+    --monospace:"Source Code Pro", monospace;
     font-size:16px;
 }
 
@@ -286,7 +286,7 @@ img {
     margin:0 0 -25px 0;
 }
 
-.heroine h3 {
+.heroine h3, .blog h3 {
     margin:0 0 10px 0;
 }
 
@@ -349,6 +349,86 @@ img {
 .about-fun-facts ul li {
     margin:0 0 10px 0;
     padding:5px 10px;
+}
+
+.blog {
+    padding:50px 0;
+}
+
+.three-quarters {
+    width:75%;
+}
+
+@media screen and (max-width:500px) {
+    .three-quarters {
+        width:100%;
+    }
+}
+
+.quarter {
+    width:25%;
+}
+
+@media screen and (max-width:500px) {
+    .quarter {
+        width:100%;
+    }
+}
+
+.welcome {
+    margin:0 0 100px 0;
+}
+
+.blog h1 {
+    margin:0 0 -20px 0;
+}
+
+.blog h4 {
+  padding:10px 0;
+  position:relative;
+}
+
+.blog h4 span {
+  position:relative;
+  z-index:1;
+}
+
+.blog h4 span::before {
+  content:"";
+  position:absolute;
+  top:50%;
+  left:0;
+  height:.75rem;
+  width:100%;
+  background-color:var(--primary-color);
+  transform:skew(-10deg);
+  z-index:-1;
+}
+
+.welcome p {
+    display:inline;
+    position:relative;
+}
+
+.blog p {
+    line-height:24px;
+    margin:10px 0;
+}
+
+.blog a {
+    border-bottom:1px solid var(--neutral-prim);
+}
+
+.arrow {
+    height:100px;
+    position:absolute;
+    top:200px;
+}
+
+.code {
+    margin:10px 0;
+    padding:10px 20px;
+    width:fit-content;
 }
 
 .footer {

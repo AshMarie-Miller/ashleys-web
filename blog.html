@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ashley's Web Design</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <!----- Google Fonts ----->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!---------- Header ---------->
+        <header class="header-nav bg-primary">
+            <div class="content flex center">
+                <h1 class="neutral-prim sans-serif lowercase f7 fw3 ls1"><span class="neutral-tert cursive f10 fw4 ls2 block">Ashley's</span> Web Design</h1>
+                <nav class="neutral-prim sans-serif uppercase f5 fw4 flex space-between desktop">
+                    <a class="neutral-prim td-none" href="index.html">Home</a>
+                    <a class="neutral-prim td-none" href="blog.html">Blog</a>
+                    <a class="neutral-prim td-none" href="#about">About</a>
+                </nav>
+            </div>
+        </header>
+        <!---------- Main ---------->
+        <main class="main">
+            <!----- Blog ----->
+            <section class="blog bg-neutral-sec">
+                <div class="content">
+                    <div class="welcome three-quarters">
+                        <h1 class="neutral-tert cursive lowercase f10 fw4 highlight">Welcome</h1>
+                        <p class="neutral-prim sans-serif lowercase f7 fw3 ls1">
+                            This is where I share my love of design and code.
+                        </p>
+                        <img src="images/arrow.svg" alt="A handdrawn arrow" class="arrow">
+                    </div>
+                    <div class="three-quarters">
+                        <h2 class="neutral-prim sans-serif lowercase f7 fw3 ls1">Git (& GitHub)</h2>
+                        <h3 class="neutral-prim sans-serif uppercase f4 fw4">References</h3>
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            If you're a self-taught developer, and/or you have never worked on a team, you may have never learned Git. No worries! This reference is for you.
+                        </p>
+                        <h4 class="neutral-prim sans-serif f6 fw3 ls1"><span>What is Git?</span></h4>
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            Git is a version control system (VCS). It keeps track of changes to your files and makes it easy for a team to collaborate on projects.
+                        </p>
+                        <h4 class="neutral-prim sans-serif f6 fw3 ls1"><span>How to Install Git</span></h4>
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            You can download and install Git from Git's official website: <a href="http://www.git-scm.com" class="neutral-prim td-none">git-scm.com</a>. To confirm it was installed correctly, open your command line interface (CLI). On Windows, Command Prompt or PowerShell, and on Mac, Terminal. Type <span class="code bg-secondary monospace fw4 block">git --version</span> and it should show the version of git that was installed.
+                        </p>
+                        <h4 class="neutral-prim sans-serif f6 fw3 ls1"><span>GUI vs CLI</span></h4>
+                        <img src="images/cat.svg" alt="A handdrawn cat" height="100px" style="float:left;">
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            You can use Git with a graphical user interface (GUI) or a command line interface (CLI). There are arguments for both. It is a personal preference. I have used both. Personally, the text editor I use for coding has a built-in CLI, so if I can use that, then that's one less app for me to open.
+                        </p>
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            Ash, what's a GUI and what's a CLI? The operating system on your computer is a GUI. You have a desktop and icons. Maybe they're organized. Maybe they're cluttered. No judgement! You know where everything is, and you click an icon to open a folder of photos of your cat. Take away the desktop and icons, and you're left with the CLI. On Windows, Command Prompt or PowerShell, and on Mac, Terminal. Now you type a command to open a folder of photos of your cat.
+                        </p>
+                        <h4 class="neutral-prim sans-serif f6 fw3" id="BasicCLICommands"><span>Basic CLI Commands</span></h4>
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            There are many commands, but I've only listed the basic commands that you might use with Git.
+                        </p>
+                        <ul class="neutral-prim sans-serif f5 fw3 list-none">
+                            <li><span class="monospace fw4">pwd</span> - print working directory (folder)</li>
+                            <li><span class="monospace fw4">ls</span> - list directories</li>
+                            <li><span class="monospace fw4">cd</span> - change directory</li>
+                            <li><span class="monospace fw4">mkdir</span> - make directory</li>
+                        </ul>
+                        <h4 class="neutral-prim sans-serif f6 fw3" id="ConfigureGit"><span>Configure Git</span></h4>
+                        <img src="images/laptop.svg" alt="A handdrawn laptop" height="100px" style="float:right;">
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            After you <a href="#HowToInstallGit" class="neutral-prim td-none">install Git</a> and before you start using Git, you'll need to configure it. To configure it, open your CLI and type <span class="code bg-secondary monospace fw4 block">git config --global user.name "Your Username"</span> and <span class="code bg-secondary monospace fw4 block">git config --global user.email "Your Email"</span> replacing your name and email in the quotes. Git will use your name and email to keep track of who made file changes.
+                        </p>
+                        <h4 class="neutral-prim sans-serif f6 fw3"><span>Start Using Git</span></h4>
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            After you <a href="#ConfigureGit" class="neutral-prim td-none">configure Git</a>, the first thing you'll need to do is open your CLI and navigate to the folder you want to start using Git with or create the folder if it doesn't exist yet using the <a href="#BasicCLICommands" class="neutral-prim td-none">basic cli commands</a>. If you've been following along from the beginning, I mentioned that the text editor I use has a built in CLI. Besides being one less app to open, a cool thing about the built in CLI is that it's already at the current folder that I have opened, so I don't have to worry about using the basic CLI commands to navigate there. Once you're at the folder you want to use git with, type <span class="code bg-secondary monospace fw4 block">git init</span> and the folder now magically becomes a repository or repo, which is just a fancy word for a project being watched for changes.
+                        </p>
+                        <h4 class="neutral-prim sans-serif f6 fw3"><span>What is GitHub?</span></h4>
+                        <p class="neutral-prim sans-serif f5 fw3">
+                            You can use Git on your own personal device without ever hosting it on the web, but most devs use GitHub or another hosting service for Git repos, GitHub being the most popular. The first thing to do is create a free account on GitHub.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!----- About ----->
+            <section id="about" class="about bg-primary flex flex-wrap center">
+                <div class="content">
+                    <h2 class="neutral-prim sans-serif lowercase f7 fw3 ls1">About Me</h2>
+                    <div class="flex flex-wrap center">
+                        <div class="about-image flex space-around">
+                            <img src="images/hi.png" alt="A Bitmoji of me, Ashley Miller, saying 'Hi'">
+                        </div>
+                        <div class="about-blurb flex flex-wrap center">
+                            <div>
+                                <p class="neutral-prim sans-serif f5 fw3">
+                                    Besides designing and coding, I love to write, read, play video games, do arts and crafts, imagine Hogwarts is a real place, and they're hiring professors, geek out over new fabric and/or yarn I found, learn new things, and be at home with my family - my husband, our two boys, and our cat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-fun-facts">
+                        <h2 class="neutral-prim sans-serif lowercase f7 fw3 ls1">Fun Facts</h2>
+                        <ul class="neutral-prim sans-serif f5 fw3 list-none">
+                            <li class="bg-neutral-sec">💻 I first fell in love with design and code in high school when I took Web Design and Digital Design classes.</li>
+                            <li class="bg-neutral-sec">🌸 In case it isn't obvious, my favorite color is pink.</li>
+                            <li class="bg-neutral-sec">☕️ I have to have my cup of coffee every morning.</li>
+                            <li class="bg-neutral-sec">🏰 One of my dreams is to visit all of the Disney parks. So far I've been to the one in Florida and the one in Japan.</li>
+                            <li class="bg-neutral-sec">🦡 I'm a Hufflepuff.</li>
+                            <li class="bg-neutral-sec">💵 I spend way too much money on fabric and yarn.</li>
+                            <li class="bg-neutral-sec">🍽 I love to cook, and my current favorite recipe is Sheet Pan Mac and Cheese.</li>
+                            <li class="bg-neutral-sec">🍋 I'm a sucker for lemon flavored sweets.</li>
+                            <li class="bg-neutral-sec">🎼 I'm a Swiftie.</li>
+                            <li class="bg-neutral-sec">🏡 I'm originally from Florida, but I now live in North Carolina with my family.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!---------- Footer ---------->
+        <footer class="footer bg-primary">
+            <p class="neutral-tert sans-serif f3 fw4 text-center">Designed & Developed with &hearts; by Ashley Miller</p>
+        </footer>
+    </body>
+</html>
